@@ -17,7 +17,7 @@ public class FoodTruckApp {
 		Scanner input = new Scanner(System.in);
 		introduction();
 		createTrucks(input);
-		while (trucks.length > 0) {
+		while (trucks[0] != null) {
 			menu();
 			System.out.print("User input: ");
 			int menuOption = input.nextInt();
